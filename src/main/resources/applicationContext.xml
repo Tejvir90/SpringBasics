@@ -18,8 +18,8 @@
         <property name="emailId" value="${emailId}"></property>
 
     </bean>
-    <bean id="fortuneService"  class="com.tej.springdemo.FortuneServiceImpl">
+    <bean id="fortuneService"  class="com.tej.springdemo.FortuneServiceImpl"></bean>
 
-    </bean>
+    <bean id="cricketCoach" class="com.tej.springdemo.CricketCoach" scope="prototype"></bean>
 
 </beans>
