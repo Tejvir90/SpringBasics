@@ -6,6 +6,7 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
+    <context:component-scan base-package="com.tej.springdemo" ></context:component-scan>
     <context:property-placeholder location="info.properties"></context:property-placeholder>
 
     <bean id="baseBallCoach"  class="com.tej.springdemo.BaseBallCoach" init-method="startUpStuff" destroy-method="cleanUpStuff">

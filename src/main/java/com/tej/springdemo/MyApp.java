@@ -20,6 +20,8 @@ public class MyApp {
         System.out.println(trackCoachSecond + "-" + trackCoachSecond.getDailyWorkout());
         System.out.println(cricketCoach + "-" + cricketCoach.getDailyWorkout());
         System.out.println(cricketCoachSecond + "-" + cricketCoachSecond.getDailyWorkout());
+        Coach volleyBallCoach= classPathXmlApplicationContext.getBean("volleyBallCoach", Coach.class);
+        System.out.println(volleyBallCoach.getDailyWorkout());
         classPathXmlApplicationContext.close();
     }
 
