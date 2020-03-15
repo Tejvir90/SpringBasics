@@ -6,6 +6,7 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
+    <context:property-placeholder location="info.properties"></context:property-placeholder>
 
     <bean id="baseBallCoach"  class="com.tej.springdemo.BaseBallCoach">
         <constructor-arg ref="fortuneService"></constructor-arg>
@@ -13,8 +14,8 @@
 
     <bean id="trackCoach" class="com.tej.springdemo.TrackCoach">
         <property name="fortuneService" ref="fortuneService"></property>
-        <property name="name" value="Baljit"></property>
-        <property name="emailId" value="baljit.s@gmail.com"></property>
+        <property name="name" value="${name}"></property>
+        <property name="emailId" value="${emailId}"></property>
 
     </bean>
     <bean id="fortuneService"  class="com.tej.springdemo.FortuneServiceImpl">

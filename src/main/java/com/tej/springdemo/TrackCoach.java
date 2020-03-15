@@ -16,7 +16,7 @@ public class TrackCoach implements Coach {
 
     @Override
     public String getDailyWorkout() {
-        return "Run a hard 5K" +  "- " +fortuneService.generateFortuneForTheDay() + "\r "+ "- " + getName() + "\r" + "- "+ getEmailId() ;
+        return "Run a hard 5K" +  "- " +fortuneService.generateFortuneForTheDay() +  "- " + getName()  + "- "+ getEmailId() ;
     }
 
 
