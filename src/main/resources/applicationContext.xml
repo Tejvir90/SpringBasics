@@ -8,7 +8,7 @@
 
     <context:property-placeholder location="info.properties"></context:property-placeholder>
 
-    <bean id="baseBallCoach"  class="com.tej.springdemo.BaseBallCoach">
+    <bean id="baseBallCoach"  class="com.tej.springdemo.BaseBallCoach" init-method="startUpStuff" destroy-method="cleanUpStuff">
         <constructor-arg ref="fortuneService"></constructor-arg>
     </bean>
 
@@ -16,7 +16,6 @@
         <property name="fortuneService" ref="fortuneService"></property>
         <property name="name" value="${name}"></property>
         <property name="emailId" value="${emailId}"></property>
-
     </bean>
     <bean id="fortuneService"  class="com.tej.springdemo.FortuneServiceImpl"></bean>
 

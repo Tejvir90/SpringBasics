@@ -12,14 +12,14 @@ public class MyApp {
         Coach baseBallCoach = classPathXmlApplicationContext.getBean("baseBallCoach", Coach.class);
         Coach trackCoach = classPathXmlApplicationContext.getBean("trackCoach", Coach.class);
         Coach trackCoachSecond = classPathXmlApplicationContext.getBean("trackCoach", Coach.class);
-        Coach cricketCoach = classPathXmlApplicationContext.getBean("cricketCoach",Coach.class);
-        Coach cricketCoachSecond = classPathXmlApplicationContext.getBean("cricketCoach",Coach.class);
-                //Use Object
-        System.out.println(baseBallCoach.getDailyWorkout());
-        System.out.println(trackCoach.getDailyWorkout());
-        System.out.println(trackCoachSecond.getDailyWorkout());
-        System.out.println(cricketCoach.getDailyWorkout());
-        System.out.println(cricketCoachSecond.getDailyWorkout());
+        Coach cricketCoach = classPathXmlApplicationContext.getBean("cricketCoach", Coach.class);
+        Coach cricketCoachSecond = classPathXmlApplicationContext.getBean("cricketCoach", Coach.class);
+        //Use Object
+        System.out.println(baseBallCoach + "-" + baseBallCoach.getDailyWorkout());
+        System.out.println(trackCoach + "-" + trackCoach.getDailyWorkout());
+        System.out.println(trackCoachSecond + "-" + trackCoachSecond.getDailyWorkout());
+        System.out.println(cricketCoach + "-" + cricketCoach.getDailyWorkout());
+        System.out.println(cricketCoachSecond + "-" + cricketCoachSecond.getDailyWorkout());
         classPathXmlApplicationContext.close();
     }
 
